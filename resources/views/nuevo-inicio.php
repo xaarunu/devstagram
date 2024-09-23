@@ -1,1 +1,0 @@
-<h1> Nuevo inicio </h1>
