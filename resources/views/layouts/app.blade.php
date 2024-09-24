@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>DevStagram - @yield('titulo')</title>
+        <title>CRUD - @yield('titulo')</title>
 
         @vite('../resources/css/app.css')
     </head>
@@ -14,15 +14,13 @@
             <div class="container mx-auto flex justify-between items-center">
 
                 <h1 class="text-3xl font-extrabold">
-                    DevStagram
+                    CRUD
                 </h1>
 
                 <nav>
-                    <a class="font-bold uppercase text-gray-600 text-sm " href="#">Login</a>
-                    <a class="font-bold uppercase text-gray-600 text-sm " href="crear-cuenta">Crear cuenta</a>
-                    <a class="font-bold uppercase text-gray-600 text-sm " href="/devstagram/public"> Inicio</a>
-                    <a class="font-bold uppercase text-gray-600 text-sm " href="nosotros"> Nosotros </a>
-                    <a class="font-bold uppercase text-gray-600 text-sm " href="tienda"> Tienda </a>
+                    <a class="ml-2.5 font-bold uppercase text-gray-600 text-sm " href="crear-usuario">CREAR USUARIO</a>
+                    <a class="ml-2.5 font-bold uppercase text-gray-600 text-sm " href="/devstagram/public"> INICIO</a>
+                  
                 </nav>
 
             </div>
@@ -43,7 +41,7 @@
       </main>
 
       <footer class="text-center p-5 text-gray-500 font-bold mt-10">
-        Devstagram - Todos los derechos reservados
+        CRUD - Todos los derechos reservados
         
         {{ date('Y') }}
       </footer>
