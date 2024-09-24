@@ -18,8 +18,8 @@
                 </h1>
 
                 <nav>
-                    <a class="ml-2.5 font-bold uppercase text-gray-600 text-sm " href="crear-usuario">CREAR USUARIO</a>
-                    <a class="ml-2.5 font-bold uppercase text-gray-600 text-sm " href="/devstagram/public"> INICIO</a>
+                    <a class="ml-2.5 font-bold uppercase text-gray-600 text-sm " href=" {{route('crear-usuario')}}">CREAR USUARIO</a>
+                    <a class="ml-2.5 font-bold uppercase text-gray-600 text-sm " href=" {{route('inicio')}}"> INICIO</a>
                   
                 </nav>
 

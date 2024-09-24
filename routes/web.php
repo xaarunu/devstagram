@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\EditController;
 use App\Http\Controllers\Auth\RegisterController;
 
 /*
@@ -14,10 +15,14 @@ use App\Http\Controllers\Auth\RegisterController;
 |
 */
 
-Route::get('/', function () {
-    return view('inicio');
-});
+//Route::get('/', function () {
+//    return view('inicio');
+//});
 
-Route::get('/crear-cuenta', [RegisterController::class , 'crear']);
-Route::post('/crear-cuenta', [RegisterController::class , 'store']);
+Route::get('/', [RegisterController::class , 'index'])->name('inicio');
+Route::get('/crear-usuario', [RegisterController::class , 'crear'])->name('crear-usuario');
+Route::post('/crear-usuario', [RegisterController::class , 'store'])->name('crear-usuario.store');
+Route::get('/edit-usuario/{usuario}', [RegisterController::class , 'editar'])->name('editar-usuario');
+Route::put('/edit-usuario/{usuario}', [RegisterController::class , 'update'])->name('editar-usuario');
+Route::delete('/edit-usuario/{usuario}', [RegisterController::class , 'destroy'])->name('borrar-usuario');
 
