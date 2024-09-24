@@ -19,7 +19,7 @@
 
                 <nav>
                     <a class="font-bold uppercase text-gray-600 text-sm " href="#">Login</a>
-                    <a class="font-bold uppercase text-gray-600 text-sm " href="#">Crear cuenta</a>
+                    <a class="font-bold uppercase text-gray-600 text-sm " href="crear-cuenta">Crear cuenta</a>
                     <a class="font-bold uppercase text-gray-600 text-sm " href="/devstagram/public"> Inicio</a>
                     <a class="font-bold uppercase text-gray-600 text-sm " href="nosotros"> Nosotros </a>
                     <a class="font-bold uppercase text-gray-600 text-sm " href="tienda"> Tienda </a>
@@ -42,7 +42,7 @@
 
       </main>
 
-      <footer class="text-center p-5 text-gray-500 font-bold">
+      <footer class="text-center p-5 text-gray-500 font-bold mt-10">
         Devstagram - Todos los derechos reservados
         
         {{ date('Y') }}
